@@ -9,6 +9,7 @@ public class UserDefinedException {
 		int age;
 		System.out.println("Enter your age");
 		
+		// Create a Scanner object to read user input
 		Scanner sc=new Scanner(System.in);
 		age=sc.nextInt();
 		
@@ -25,11 +26,13 @@ public class UserDefinedException {
 
 	}
 }
+//Create a custom exception class named CantVoteException
+//the custom exception class must be extending to a in built class
 	class CantVoteException extends RuntimeException
 	{
 		CantVoteException(String msg)
 		{
-			
+			 // Call the constructor of the superclass (RuntimeException) with a custom message
 			super(msg);
 		}
 
